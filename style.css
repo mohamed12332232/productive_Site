@@ -1,0 +1,141 @@
+*{
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color:white;
+    --bg-color: #212529;
+    --main-color: #6c757c;
+    --main-color2: white;
+    --sec-color: #dee2e6;
+}
+
+
+body{
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap:30px;
+    position: relative;
+    /* overflow-y: scroll; */
+
+}
+
+/* start inputs */
+
+.inputs{
+    /* background: var(--s-color); */
+    padding:20px;
+    border-radius: 10px;
+    width: 300px;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0;
+
+
+}
+
+h2{
+    color:var(--main-color2);
+    margin-bottom: 10px;
+    font-size:32px;
+}
+
+.inputs .inp{
+    margin-bottom: 10px;
+    background: var(--main-color);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+
+.inputs .inp::placeholder{
+    color: rgba(255, 255, 255, 0.89);
+    padding-left: 2px;
+    
+    
+}
+
+.inputs #btn{
+    color:var(--sec-color2);
+    padding: 20px;
+    background: none;
+    font-size:20px;
+    border: none;
+    cursor: pointer;
+}
+/* end inputs */
+
+
+
+
+/* start outputs */
+
+.outputs{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* align-items: flex-start; */
+    align-items: flex-start;
+    height:50vh;
+    /* margin-bottom: 50px; */
+    /* background: #000; */
+}
+
+
+.outputs .column{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+
+/* .box:first-child{
+    background: #000;
+    position: relative;
+    top: 100px;
+}
+
+.box:nth-child(2){
+    background: rgb(172, 23, 23);
+    position: relative;
+    top: 100px;
+} */
+
+
+
+.box{
+    background: var(--main-color);
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    border-radius:10px;
+    width: 200px;
+    
+}
+
+
+.item{
+    background: var(--bg-color);
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    color: var(--sec-color);
+
+}
+
+/* end outputs */
+
